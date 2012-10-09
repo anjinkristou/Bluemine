@@ -60,21 +60,12 @@ qx.Class.define("bluemine.Application",
       this.getRoot().add(this._getLayout(), {edge:0});
     },
     _getLayout: function() {
-      var composite = new qx.ui.container.Composite(new qx.ui.layout.Dock(0, 0));
-      composite.add(this._getHeader(), {edge:'north'});
+      var composite = new qx.ui.container.Composite(new qx.ui.layout.Dock(0, 0));   
+      composite.add(new bluemine.view.Header(), {edge:'north'});
       composite.add(this._getMenu(), {edge:'north'});
       composite.add(this._getButtons(), {edge:'west'});
       composite.add(this._getTree(), {edge:'center'});
       composite.add(this._getStatusBar(), {edge:'south'});
-      return composite;
-    },
-
-    _getHeader: function() {
-      var composite = new qx.ui.container.Composite(new qx.ui.layout.HBox());
-      composite.setAppearance('app-header');
-      composite.add(new qx.ui.basic.Label('BlueMine'));
-      composite.add(new qx.ui.core.Spacer(), {flex: 1});
-      composite.add(new qx.ui.basic.Label('v1.0'));
       return composite;
     },
 

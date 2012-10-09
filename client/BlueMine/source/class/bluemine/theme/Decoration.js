@@ -14,5 +14,14 @@ qx.Theme.define("bluemine.theme.Decoration",
 
   decorations :
   {
+    "mode-select-tab" : {
+      include : "tabview-page-button-top",
+
+      style :
+      {
+        color : "highlight-shade",
+        backgroundColor: "background-selected"
+      }
+    }
   }
 });
