@@ -24,9 +24,7 @@
     "profiling",
     "source",
     "source-all",
-    "source-hybrid",    
-    //"simulation-build",
-    //"simulation-run",
+    "source-hybrid",
     "test",
     "test-source",
     "translation"
@@ -39,7 +37,7 @@
     "APPLICATION"  : "bluemine",
     "QOOXDOO_PATH" : "C:/wamp/www/modulemanager/client/qooxdoo",
     "QXTHEME"      : "bluemine.theme.Theme",
-    //"API_EXCLUDE"  : ["qx.test.*", "${APPLICATION}.theme.*", "${APPLICATION}.test.*", "${APPLICATION}.simulation.*"],
+    "API_EXCLUDE"  : ["qx.test.*", "${APPLICATION}.theme.*", "${APPLICATION}.test.*"],
     "LOCALES"      : [ "en" ],
     "CACHE"        : "${TMPDIR}/qx${QOOXDOO_VERSION}/cache",
     "ROOT"         : "."
