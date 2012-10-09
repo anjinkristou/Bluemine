@@ -35,7 +35,7 @@
   "let" :
   {
     "APPLICATION"  : "bluemine",
-    "QOOXDOO_PATH" : "C:/wamp/www/modulemanager/client/qooxdoo",
+    "QOOXDOO_PATH" : "../qooxdoo",
     "QXTHEME"      : "bluemine.theme.Theme",
     "API_EXCLUDE"  : ["qx.test.*", "${APPLICATION}.theme.*", "${APPLICATION}.test.*"],
     "LOCALES"      : [ "en" ],

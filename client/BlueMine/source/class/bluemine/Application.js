@@ -158,6 +158,12 @@ qx.Class.define("bluemine.Application",
       }
     */
       return false;
+    },
+    
+    // overridden
+    finalize : function()
+    {
+      this.base(arguments);
     }
   }
 });

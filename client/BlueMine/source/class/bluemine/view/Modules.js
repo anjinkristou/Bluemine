@@ -38,7 +38,8 @@ qx.Class.define("bluemine.view.Modules",
       allowGrowY : true
     });
     this.add(caption);
-
+    
+    this.add(new bluemine.view.Search());
     this.add(this.__createTable(), {flex: 1});
         
     this.setBackgroundColor("white");
